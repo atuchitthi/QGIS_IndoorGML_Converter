@@ -1,0 +1,229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "poly_hole_1",
+        "name": "Office A",
+        "room": "Office A",
+        "floor": "1st",
+        "fLevel": "1",
+        "space_use": "office",
+        "category": "workspace",
+        "area_m2": 200.5,
+        "description": "Office with inner courtyard",
+        "tags": ["workspace", "quiet"],
+        "connects_to": ["Corridor A"],
+        "material": "carpet",
+        "lighting": "fluorescent",
+        "wheelchair": true,
+        "occupancy": 5,
+        "start_time": "2025-04-23T08:00:00Z",
+        "end_time": "2025-04-23T18:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0], [0, 10], [10, 10], [10, 0], [0, 0]
+          ],
+          [
+            [2, 2], [2, 8], [8, 8], [8, 2], [2, 2]
+          ]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mp_section",
+        "name": "Building Section B",
+        "indoor": "hallway",
+        "type": "circulation",
+        "floor_level": "ground",
+        "total_area_m2": 400.0,
+        "rooms": ["Office A", "Lab B"],
+        "connects_to": ["Office A", "Lab B"],
+        "description": "Main Building Section",
+        "accessible": false
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [[12, 0], [22, 0], [22, 10], [12, 10], [12, 0]]
+          ],
+          [
+            [[12, 10], [22, 10], [22, 20], [12, 20], [12, 10]]
+          ]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sensor_1",
+        "name": "Temperature Sensor",
+        "room": "Office A",
+        "floor_level": "1",
+        "elevation": 2.0,
+        "sensor_type": "temperature",
+        "reading": 22.5,
+        "unit": "C",
+        "timestamp": "2025-04-23T09:30:00Z",
+        "tags": ["sensor", "environment"],
+        "connects_to": ["Office A"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5, 5, 2]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sensors_group",
+        "name": "Air Quality Sensors",
+        "room": "Building Section B",
+        "floor": "ground",
+        "sensors": ["CO2", "VOC"],
+        "readings": [400, 0.5],
+        "unit": ["ppm", "mg/m3"]
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [15, 5],
+          [16, 6],
+          [17, 7]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "line_1",
+        "name": "Corridor A",
+        "room": "Corridor A",
+        "floorLevel": "1",
+        "length_meters": 30.0,
+        "material": "tile",
+        "connects_to": ["Office A", "Lab B"],
+        "description": "Main corridor",
+        "lighting": "LED",
+        "aisle": "main"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [0, 12],
+          [10, 12],
+          [20, 12]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "multi_corridors",
+        "name": "Corridor Network",
+        "category": "circulation",
+        "floor": "ground",
+        "length_meters": 45.0,
+        "lighting": "LED",
+        "width": 1.5,
+        "connects_to": ["Building Section B", "Lab C"]
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [12, 22],
+            [22, 22]
+          ],
+          [
+            [22, 22],
+            [22, 12]
+          ]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "geom_coll_1",
+        "name": "Room C with Door",
+        "room": "Room C",
+        "level": "2",
+        "corridor": "false",
+        "connects_to": ["Corridor B"],
+        "door_id": "door_1",
+        "door_type": "hinged",
+        "wheelchair": false
+      },
+      "geometry": {
+        "type": "GeometryCollection",
+        "geometries": [
+          {
+            "type": "Polygon",
+            "coordinates": [
+              [[25, 0], [35, 0], [35, 10], [25, 10], [25, 0]]
+            ]
+          },
+          {
+            "type": "Point",
+            "coordinates": [30, 5]
+          }
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "storage_1",
+        "name": "Storage Room",
+        "floor": "2nd",
+        "area_m2": 80.0,
+        "connects_to": ["Room C"],
+        "description": "Storage",
+        "hazard": "flammable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[40, 0], [50, 0], [50, 10], [40, 10], [40, 0]]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lab_b",
+        "name": "Lab B",
+        "floor": "1st",
+        "fLevel": "1",
+        "area_m2": 150.0,
+        "connects_to": ["Corridor A", "Building Section B"],
+        "description": "Chemistry Lab",
+        "chemical_storage": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[0, -10], [10, -10], [10, 0], [0, 0], [0, -10]]
+        ]
+      }
+    }
+
+  ]
+}

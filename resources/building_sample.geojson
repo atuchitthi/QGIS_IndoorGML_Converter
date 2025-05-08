@@ -1,0 +1,305 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-corridor-1",
+        "name": "Basement Corridor",
+        "z": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[0,0], [10,0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-room-1",
+        "name": "Basement Storage",
+        "z": -1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0,1], [10,1], [10,10], [0,10], [0,1]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-stairs-1",
+        "name": "Basement Staircase",
+        "z": -1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[9,9], [11,9], [11,11], [9,11], [9,9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-elevator-1",
+        "name": "Basement Elevator",
+        "z": -1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5,5]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-door-1",
+        "name": "Basement Door",
+        "z": -1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10,1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "G-room-1",
+        "name": "Reception",
+        "story": "Ground"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[20,1], [30,1], [30,10], [20,10], [20,1]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "G-corridor-1",
+        "name": "Ground Corridor",
+        "story": "Ground"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[20,0], [30,0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "G-stairs-1",
+        "name": "Ground Staircase",
+        "story": "Ground"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[29,9], [31,9], [31,11], [29,11], [29,9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "G-elevator-1",
+        "name": "Ground Elevator",
+        "story": "Ground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21,9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "G-door-1",
+        "name": "Main Entrance",
+        "story": "Ground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20,1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-room-1",
+        "name": "Office 101",
+        "floor_name": "1st"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[40,1], [50,1], [50,10], [40,10], [40,1]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-corridor-1",
+        "name": "1st Corridor",
+        "floor_name": "1st"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[40,0], [50,0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-stairs-1",
+        "name": "1st Staircase",
+        "floor_name": "1st"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[49,9], [51,9], [51,11], [49,11], [49,9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-elevator-1",
+        "name": "1st Elevator",
+        "floor_name": "1st"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45,5]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1-door-1",
+        "name": "1st Door",
+        "floor_name": "1st"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40,1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-room-1",
+        "name": "Conference 201",
+        "level": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[60,1], [70,1], [70,10], [60,10], [60,1]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-corridor-1",
+        "name": "2nd Corridor",
+        "level": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[60,0], [70,0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-stairs-1",
+        "name": "2nd Staircase",
+        "level": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[69,9], [71,9], [71,11], [69,11], [69,9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-elevator-1",
+        "name": "2nd Elevator",
+        "level": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [65,5]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2-door-1",
+        "name": "2nd Door",
+        "level": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [60,1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-room-1",
+        "name": "Lab 301",
+        "elevation": 3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80,1], [90,1], [90,10], [80,10], [80,1]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-corridor-1",
+        "name": "3rd Corridor",
+        "elevation": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[80,0], [90,0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-stairs-1",
+        "name": "3rd Staircase",
+        "elevation": 3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[89,9], [91,9], [91,11], [89,11], [89,9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-elevator-1",
+        "name": "3rd Elevator",
+        "elevation": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85,5]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3-door-1",
+        "name": "3rd Door",
+        "elevation": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80,1]
+      }
+    }
+  ]
+}

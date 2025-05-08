@@ -1,0 +1,2 @@
+[console_scripts]
+indoorgml_converter = indoorgml_converter.cli:main

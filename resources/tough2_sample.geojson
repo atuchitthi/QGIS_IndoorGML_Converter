@@ -1,0 +1,108 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "space_use": "office",
+        "floor_level": "1",
+        "label": "Room A"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0], [0, 10], [10, 10], [10, 0], [0, 0]
+          ],
+          [
+            [2, 2], [2, 8], [8, 8], [8, 2], [2, 2]
+          ]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "room_id": "B1",
+        "level": "1",
+        "type": "lab"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[10.001, 0], [10.001, 5], [15.001, 5], [15.001, 0], [10.001, 0]]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "ref": "C201",
+        "function": "warehouse",
+        "fLevel": "2"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[20, 0], [25, 0], [25, 5], [20, 5], [20, 0]]],
+          [[[20, 5.001], [25, 5.001], [25, 10], [20, 10], [20, 5.001]]]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "corridor": "yes",
+        "floor": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[5, 10.001], [10, 10.001], [10, 15], [5, 15], [5, 10.001]]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "D1",
+        "function": "restroom",
+        "level": "2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [[50, 50], [50, 60], [60, 60], [60, 50], [50, 50]]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "note": "should be filtered out (Point)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0, 20]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "note": "should be filtered out (LineString)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[0, 30], [10, 30]]
+      }
+    }
+
+  ]
+}

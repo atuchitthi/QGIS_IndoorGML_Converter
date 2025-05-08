@@ -1,0 +1,197 @@
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [102.0, 0.5, 1.0]
+          },
+          "properties": {
+            "id": "point_1",
+            "name": "Point A",
+            "room": "Room 1",
+            "elevation": "1st",
+            "tags": ["entrance", "main"],
+            "connects_to": ["Room 2", "Room 3"],
+            "description": "Main entrance point"
+          },
+          "bbox": [101.9, 0.4, 102.1, 0.6, 1.0]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [102.0, 0.0],
+              [103.0, 1.0],
+              [104.0, 0.0],
+              [105.0, 1.0]
+            ]
+          },
+          "properties": {
+            "id": "line_1",
+            "name": "Hallway 1",
+            "room": "Room 2",
+            "elevation": "1st",
+            "connects_to": ["Room 3", "Room 4"],
+            "length_meters": 50.5,
+            "material": "wood",
+            "lighting": "fluorescent"
+          },
+          "bbox": [101.9, 0.0, 105.0, 1.0]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [102.0, 0.0],
+                [103.0, 1.0],
+                [104.0, 0.0],
+                [102.0, 0.0]
+              ]
+            ]
+          },
+          "properties": {
+            "id": "polygon_1",
+            "name": "Room 1",
+            "area_m2": 120.5,
+            "floor_name": "1st",
+            "connects_to": ["Room 2"],
+            "description": "Conference Room"
+          },
+          "bbox": [101.9, 0.0, 104.0, 1.0]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [102.0, 0.0],
+                  [103.0, 0.0],
+                  [103.0, 1.0],
+                  [102.0, 1.0],
+                  [102.0, 0.0]
+                ]
+              ],
+              [
+                [
+                  [104.0, 0.0],
+                  [105.0, 0.0],
+                  [105.0, 1.0],
+                  [104.0, 1.0],
+                  [104.0, 0.0]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "id": "multipolygon_1",
+            "name": "Building Section 1",
+            "level": "Ground",
+            "total_area_m2": 250.0,
+            "connects_to": ["Room 1", "Room 3"],
+            "rooms": ["Room 1", "Room 2"],
+            "description": "Main Building Section"
+          },
+          "bbox": [101.9, 0.0, 105.0, 1.0]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "MultiLineString",
+            "coordinates": [
+              [
+                [102.0, 0.0],
+                [103.0, 1.0],
+                [104.0, 0.0]
+              ],
+              [
+                [104.5, 0.5],
+                [105.5, 1.5],
+                [106.5, 0.5]
+              ]
+            ]
+          },
+          "properties": {
+            "id": "multilinestring_1",
+            "name": "Corridors 1",
+            "room": "Room 3",
+            "floor": "1st",
+            "connects_to": ["Room 4", "Room 5"],
+            "material": "stone",
+            "length_meters": 100.5,
+            "lighting": "LED"
+          },
+          "bbox": [102.0, 0.0, 106.5, 1.5]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [105.0, 0.0],
+                [106.0, 0.0],
+                [106.0, 1.0],
+                [105.0, 1.0],
+                [105.0, 0.0]
+              ]
+            ]
+          },
+          "properties": {
+            "id": "polygon_2",
+            "name": "Room 4",
+            "area_m2": 60.0,
+            "floor": "2nd",
+            "connects_to": ["Room 3"],
+            "description": "Small Office"
+          },
+          "bbox": [105.0, 0.0, 106.0, 1.0]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [105.5, 0.5, 2.0]
+          },
+          "properties": {
+            "id": "point_2",
+            "name": "Point B",
+            "room": "Room 5",
+            "tags": ["exit", "backdoor"],
+            "connects_to": ["Room 6"],
+            "description": "Back exit point"
+          },
+          "bbox": [105.4, 0.4, 105.6, 0.6, 2.0]
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [106.0, 0.0],
+                [107.0, 0.0],
+                [107.0, 1.0],
+                [106.0, 1.0],
+                [106.0, 0.0]
+              ]
+            ]
+          },
+          "properties": {
+            "id": "polygon_3",
+            "name": "Room 6",
+            "area_m2": 75.5,
+            "floor": "2nd",
+            "connects_to": ["Room 5"],
+            "description": "Storage Room"
+          },
+          "bbox": [106.0, 0.0, 107.0, 1.0]
+        }
+      ]
+    }

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# IDE files
+*.iml
+.vscode/
+.idea/
+
+# Output folders
+output/
+*.gml
+*.png
+
+# QGIS plugin build artifacts (if any)
+*.qrc.py

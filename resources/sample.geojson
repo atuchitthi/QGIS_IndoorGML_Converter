@@ -1,0 +1,244 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0,0],[4,0],[4,4],[0,4],[0,0]]]
+      },
+      "properties": {
+        "id": "room-1",
+        "name": "Room A",
+        "feature": "Room",
+        "floor_name": "1st"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[4,2],[6,2],[6,6]]
+      },
+      "properties": {
+        "id": "corridor-1",
+        "name": "Main Corridor",
+        "feature": "Corridor",
+        "floor_name": "1st"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4,2] },
+      "properties": {
+        "id": "door-1",
+        "name": "Door A1",
+        "feature": "Door",
+        "floor_name": "1st"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[2,4],[2,6]]
+      },
+      "properties": {
+        "id": "stairs-1",
+        "name": "Stairs A",
+        "feature": "Stairs",
+        "floor_name": "1st"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6,4] },
+      "properties": {
+        "id": "elevator-1",
+        "name": "Elevator A",
+        "feature": "Elevator",
+        "floor_name": "1st"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0,0],[5,0],[5,5],[0,5],[0,0]]]
+      },
+      "properties": {
+        "id": "room-2",
+        "name": "Room B",
+        "feature": "Room",
+        "floor_name": "2nd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[5,2],[7,2],[7,7]]
+      },
+      "properties": {
+        "id": "corridor-2",
+        "name": "Corridor B",
+        "feature": "Corridor",
+        "floor_name": "2nd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [5,2] },
+      "properties": {
+        "id": "door-2",
+        "name": "Door B1",
+        "feature": "Door",
+        "floor_name": "2nd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[2,5],[2,7]]
+      },
+      "properties": {
+        "id": "stairs-2",
+        "name": "Stairs B",
+        "feature": "Stairs",
+        "floor_name": "2nd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7,5] },
+      "properties": {
+        "id": "elevator-2",
+        "name": "Elevator B",
+        "feature": "Elevator",
+        "floor_name": "2nd"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0,0],[6,0],[6,6],[0,6],[0,0]]]
+      },
+      "properties": {
+        "id": "room-3",
+        "name": "Room C",
+        "feature": "Room",
+        "level": "3rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[6,3],[8,3],[8,8]]
+      },
+      "properties": {
+        "id": "corridor-3",
+        "name": "Corridor C",
+        "feature": "Corridor",
+        "level": "3rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6,3] },
+      "properties": {
+        "id": "door-3",
+        "name": "Door C1",
+        "feature": "Door",
+        "level": "3rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[3,6],[3,8]]
+      },
+      "properties": {
+        "id": "stairs-3",
+        "name": "Stairs C",
+        "feature": "Stairs",
+        "floor_name": "3rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8,6] },
+      "properties": {
+        "id": "elevator-3",
+        "name": "Elevator C",
+        "feature": "Elevator",
+        "level": "3rd"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[0,0],[5,0],[5,5],[0,5],[0,0]]]
+      },
+      "properties": {
+        "id": "room-b",
+        "name": "Basement Room",
+        "feature": "Room",
+        "level": "Basement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[5,2],[7,2]]
+      },
+      "properties": {
+        "id": "corridor-b",
+        "name": "Basement Corridor",
+        "feature": "Corridor",
+        "level": "Basement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [5,2] },
+      "properties": {
+        "id": "door-b",
+        "name": "Basement Door",
+        "feature": "Door",
+        "level": "Basement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[2,5],[2,7]]
+      },
+      "properties": {
+        "id": "stairs-b",
+        "name": "Basement Stairs",
+        "feature": "Stairs",
+        "level": "Basement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7,5] },
+      "properties": {
+        "id": "elevator-b",
+        "name": "Basement Elevator",
+        "feature": "Elevator",
+        "level": "Basement"
+      }
+    }
+  ]
+}
