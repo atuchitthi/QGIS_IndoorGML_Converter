@@ -22,7 +22,7 @@ def _normalize_floor(v) -> str:
     """Turn various floor labels into a canonical single token."""
     s = str(v).strip()
     low = s.lower()
-    if low in ('b', 'basement', '-1'):
+    if low in ('b', 'basement', '-1', '-2'):
         return 'B'
     if low in ('g', 'ground', '0'):
         return 'G'
@@ -35,7 +35,7 @@ def _normalize_floor(v) -> str:
 def detect_level(props: dict) -> str:
     """
     Detect the floor of a space by collecting *all* possible indicators:
-      1) explicit keys: floor_name, level_name, level, floor
+      1) explicit keys: floor_name, level_name,'floor_level', 'flevel', level, floor
       1a) explicit min_level & max_level
       2) numeric z property: <0 → B, 0 → G, >0 → int(z)
       3) any key containing: elevation, storey, story, z
@@ -49,7 +49,7 @@ def detect_level(props: dict) -> str:
     candidates = []
 
     # 1) explicit floor props (skip None or nan)
-    for key in ('floor_name', 'level_name', 'level', 'floor'):
+    for key in ('floor_name', 'level_name','floor_level', 'flevel', 'level', 'floor'):
         v = props.get(key)
         if v is None or (isinstance(v, float) and math.isnan(v)):
             continue
